@@ -120,11 +120,6 @@ If interested, you can visit the EGATOR channel and check if there are any other
 - Toggle page themes to switch between light and dark modes based on user preferences.
 - Example: `document.body.classList.toggle("dark-theme");`, toggling the theme style.
 
-## 4. Redundant and Repetitive Code
-
-- Identify redundant code (like multiple definitions of `themeBtn`) and standardize naming to ensure code simplicity.
-- Suggest renaming `themebtn` to `themeBtn` for consistency.
-
 ---
 
 ## Summary
