@@ -2,7 +2,7 @@
 
 ## File Content:
 
-This is a responsive admin dashboard, and it is my first webpage design code.  
+This is a responsive admin dashboard, presenting a financial dashboard related to consumer expenses.  
 Technologies used: HTML, CSS, JS.  
 Main function: Layout and design of the page.
 
