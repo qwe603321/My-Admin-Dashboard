@@ -29,8 +29,8 @@
 /*dark theme variables*/
 .dark-theme {
   --color-white: #ffffff; /* 白色，用於文字或背景 */
-  --color-light: #000000; /* 深灰色，用於暗色主題背景 */
-  --color-dark: #86848c; /* 淺灰色，用於文字或次要元素 */
+  --color-light: #000000; /* 黑色，用於暗色主題背景 */
+  --color-dark: #86848c; /* 灰色，用於文字或次要元素 */
   --color-gray-dark-2: #adacb57a; /* 半透明灰色，用於陰影或背景 */
   --color-primary-light: #1adbf4;
 }
@@ -109,7 +109,7 @@ small {
 
 .bg-primary {
   background: var(--color-primary); /* 背景主題色 */
-  box-shadow: 0 0.8rem 0.8rem var(--color-primary-light); /* 淺色陰影 */
+  box-shadow: 0 0.8rem 0.8rem var(--color-primary-light); /* 亮色陰影 */
 }
 .bg-danger {
   background: var(--color-danger);
@@ -149,7 +149,7 @@ nav img.logo {
 }
 
 nav .search-bar {
-  background: var(--color-primary-light); /* 深灰色背景 */
+  background: var(--color-primary-light); /* 亮藍色背景 */
   padding: var(--padding-2) var(--card-padding); /* 內邊距 */
   width: 32vw; /* 寬度為視窗的 32% */
   border-radius: var(--border-radius-2); /* 圓角邊框 */
