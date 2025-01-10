@@ -1,6 +1,6 @@
+// 選取畫布元素並建立圖表
 const chart = document.querySelector("#chart").getContext("2d");
 
-// create a new chart instance
 new Chart(chart, {
   type: "line",
   data: {
@@ -18,7 +18,6 @@ new Chart(chart, {
       "Nov",
       "Dec",
     ],
-
     datasets: [
       {
         label: "BTC",
@@ -41,11 +40,11 @@ new Chart(chart, {
     ],
   },
   options: {
-    responsive: true, // 修正拼寫錯誤
+    responsive: true,
   },
 });
 
-//show or hide sidebar
+// 顯示或隱藏側邊欄
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("aside");
@@ -58,24 +57,20 @@ closeBtn.addEventListener("click", () => {
   sidebar.style.display = "none";
 });
 
-//change theme
+// 主題切換邏輯
 const themeBtn = document.querySelector(".theme-btn");
+
 themeBtn.addEventListener("click", () => {
+  // 切換主題類別
   document.body.classList.toggle("dark-theme");
 
-  themeBtn.querySelector("span:first-child").classList.toggle("active");
-  themeBtn.querySelector("span:last-child").classList.toggle("active");
-});
-//<!--END OF SIDEBAR-->
+  // 切換按鈕圖示的樣式
+  const lightIcon = themeBtn.querySelector(".light-mode");
+  const darkIcon = themeBtn.querySelector(".dark-mode");
 
-// 選取畫布元素
-const ctx = document.getElementById("stockChart").getContext("2d");
+  lightIcon.classList.toggle("active");
+  darkIcon.classList.toggle("active");
 
-//change theme
-const themebtn = document.querySelector(".theme-btn");
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
-
-  themebtn.querySelector("span:first-child").classList.toggle("active");
-  themeBtn.querySelector("span:last-child").classList.toggle("active");
+  // 切換按鈕背景塊的位置
+  themeBtn.classList.toggle("dark-active");
 });

@@ -31,7 +31,7 @@
   --color-white: #ffffff; /* 白色，用於文字或背景 */
   --color-light: #000000; /* 深灰色，用於暗色主題背景 */
   --color-dark: #86848c; /* 淺灰色，用於文字或次要元素 */
-  --color-gray-dark-2: #adacb56c; /* 半透明灰色，用於陰影或背景 */
+  --color-gray-dark-2: #adacb57a; /* 半透明灰色，用於陰影或背景 */
   --color-primary-light: #1adbf4;
 }
 
@@ -179,7 +179,7 @@ nav .profile-area {
 
 nav .profile-area .theme-btn {
   display: flex;
-  background: var(--color-gray-dark);
+  background: var(--color-light);
   width: 5rem;
   height: 2rem;
   border-radius: var(--border-radius-2);
@@ -196,9 +196,9 @@ nav .profile-area .theme-btn span {
 }
 
 nav .profile-area .theme-btn .active {
-  background: var(--color-dark);
+  background: var(--color-gray-dark);
   border-radius: var(--border-radius-2);
-  color: var(--color-light);
+  color: var(--color-white); /* 確保圖示顏色為白色 */
 }
 
 nav .profile-area .profile {
